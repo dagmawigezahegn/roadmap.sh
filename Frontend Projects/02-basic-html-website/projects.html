@@ -5,25 +5,29 @@
   <!-- HTML Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio website of Dagmawi Gezahegn, showcasing projects, articles and contact information for a Frontend Developer.">
-  <meta name="keywords" content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development">
+  <meta name="description"
+    content="Portfolio website of Dagmawi Gezahegn, showcasing projects, articles and contact information for a Frontend Developer.">
+  <meta name="keywords"
+    content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development">
   <meta name="author" content="Dagmawi Gezahegn">
-  
-  
+
+
   <title>Dagmawi Gezahegn | Frontend Developer Portfolio</title>
-  
+
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio">
-  <meta property="og:description" content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
+  <meta property="og:description"
+    content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
   <meta property="og:image" content="assets/images/og-image.jpg">
-  
+
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio">
-  <meta name="twitter:description" content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
+  <meta name="twitter:description"
+    content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
   <meta name="twitter:image" content="assets/images/og-image.jpg">
-  
+
   <!-- Favicon and Manifest -->
   <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
@@ -35,46 +39,100 @@
 </head>
 
 <body>
-  <header>
-    <p><img src="logo.png" alt="Logo">Dagmawi G.</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>Frontend Developer</h1>
+  <header class="site-header">
+    <div class="header-content">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.svg" alt="Logo">Dagmawi G.
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+ 
+  
   <main>
+    <section class="hero-section">
+  <h1 class="hero-title">My Projects</h1>
+  <p>Here’s a curated list of the work I’ve done — from websites to apps.</p>
+  </section>
+
+    <hr class="section-divider">
+
+
+
+<section>
+  <article>
+    <h2>Personal Portfolio</h2>
+    <p>This is my personal web portfolio, crafted to represent who I am as a developer. It showcases my skills, experience, and projects in a clean, responsive layout. 
+      Designed using HTML, CSS, and JavaScript, the portfolio serves as both a résumé and a demonstration of my frontend capabilities.</p>
+  <aside> <img src="" alt="Personla Portfolio Page Screenshot"> </aside>
+  </article>
+
+  <article>
+    <h2>Product Launch Page</h2>
+    <p>A sleek and modern landing page built to simulate the launch of a new product. 
+      The page emphasizes responsive design, effective use of layout techniques like Flexbox and Grid, and strong visual hierarchy. 
+      It includes sections for product features, testimonials, and a compelling call-to-action—highlighting my attention to UX/UI principles.</p>
+  <aside> <img src="" alt="Product Launch Page Screenshot"> </aside>
+    </article>
+
+  <article>
+    <h2>Calculator App</h2>
+    <p>This is a fully functional calculator that handles basic arithmetic operations with a smooth, user-friendly interface.
+      Built using JavaScript, the app features real-time input handling, keyboard support, and an intuitive design.
+      It’s a great example of applying logic and interactivity in the browser.</p>
+  <aside> <img src="" alt="Calculator App Screenshot"> </aside>
+    </article>
+
+  <article>
+    <h2>Quiz Game</h2>
+    <p>An interactive quiz game that presents users with multiple-choice questions and provides real-time feedback and scoring.
+      Developed using HTML, CSS, and JavaScript, this project demonstrates dynamic content rendering, DOM manipulation, and basic game logic—making learning both fun and educational.</p>
+  <aside> <img src="" alt="Quiz Game Screenshot"> </aside>
+    </article>
+
+  <article>
+    <h2>JavaFX-Based STIMS</h2>
+    <p>A comprehensive desktop application developed using JavaFX, STIMS (Student Transcript and Information Management System) is designed to manage student records, academic transcripts, and related data. 
+      With a robust backend powered by MySQL,this project showcases my skills in Java, database integration, and building real-world applications with graphical user interfaces.</p>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+      <aside> <img src="" alt="JavaFX-Based STIMS Screenshot"> </aside>
+  </article>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
   </main>
-  
-  <footer>All rights reserved</footer>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+ <footer class="site-footer">
+    <p>&copy; All rights reserved <span id="current-year">2025</span></p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
