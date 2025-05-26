@@ -4,12 +4,6 @@ A modern, single-page resume/CV built with semantic HTML and CSS. Clean, respons
 
 ---
 
-## 🚀 Live Demo
-
-[**View on GitHub Pages**](https://dagmawigezahegn.github.io/single-page-cv)
-
----
-
 ## ✨ Features
 
 - **Semantic HTML5** for accessibility and SEO
@@ -18,6 +12,7 @@ A modern, single-page resume/CV built with semantic HTML and CSS. Clean, respons
 - **Open Graph tags** for rich social sharing
 - **Favicon support** for a polished look
 - **Professional, print-friendly layout**
+
 
 ```
 single-page-cv/
@@ -38,11 +33,13 @@ single-page-cv/
 ```
 ---
 
+
 ## 💡 Inspiration
 
 Inspired by the [Single Page CV project on roadmap.sh](https://roadmap.sh/projects/single-page-cv).
 
 ---
+
 
 ## 👤 Author
 
