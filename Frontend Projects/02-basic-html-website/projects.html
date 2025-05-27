@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- HTML Meta Tags -->
@@ -10,7 +10,6 @@
   <meta name="keywords"
     content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development">
   <meta name="author" content="Dagmawi Gezahegn">
-
 
   <title>Dagmawi Gezahegn | Frontend Developer Portfolio</title>
 
@@ -33,20 +32,19 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="assets/favicon/site.">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
+
   <header class="site-header">
     <div class="header-content">
       <a href="index.html" class="logo-link">
         <img src="assets/images/logo.svg" alt="Logo">Dagmawi G.
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="articles.html">Articles</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -54,85 +52,90 @@
       </nav>
     </div>
   </header>
- 
-  
-  <main>
-    <section class="hero-section">
-  <h1 class="hero-title">My Projects</h1>
-  <p>Here’s a curated list of the work I’ve done — from websites to apps.</p>
-  </section>
+  <hr class="section-divider">
 
-    <hr class="section-divider">
+  <main id="main-content">
+    <header class="hero-section">
+      <h1 class="hero-title">My Projects</h1>
+      <p>Here's a curated list of the work I've done — from websites to apps.</p>
+    </header>
 
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="visually-hidden">Project Portfolio</h2>
 
+      <article class="project">
+        <div class="project-content">
+          <h3>Personal Portfolio</h3>
+          <p>This is my personal web portfolio, crafted to represent who I am as a developer. It showcases my skills,
+            experience, and projects in a clean, responsive layout.
+            Designed using HTML, CSS, and JavaScript, the portfolio serves as both a résumé and a demonstration of my
+            frontend capabilities.</p>
+        </div>
+        <aside class="project-visual">
+          <img src=""
+            alt="Screenshot of Dagmawi's personal portfolio website showing clean layout and responsive design">
+        </aside>
+      </article>
 
-<section>
-  <article>
-    <h2>Personal Portfolio</h2>
-    <p>This is my personal web portfolio, crafted to represent who I am as a developer. It showcases my skills, experience, and projects in a clean, responsive layout. 
-      Designed using HTML, CSS, and JavaScript, the portfolio serves as both a résumé and a demonstration of my frontend capabilities.</p>
-  <aside> <img src="" alt="Personla Portfolio Page Screenshot"> </aside>
-  </article>
+      <article class="project">
+        <div class="project-content">
+          <h3>Product Launch Page</h3>
+          <p>A sleek and modern landing page built to simulate the launch of a new product.
+            The page emphasizes responsive design, effective use of layout techniques like Flexbox and Grid, and strong
+            visual hierarchy.
+            It includes sections for product features, testimonials, and a compelling call-to-action—highlighting my
+            attention to UX/UI principles.</p>
+        </div>
+        <aside class="project-visual">
+          <img src="" alt="Screenshot of product launch page showing modern design and layout">
+        </aside>
+      </article>
 
-  <article>
-    <h2>Product Launch Page</h2>
-    <p>A sleek and modern landing page built to simulate the launch of a new product. 
-      The page emphasizes responsive design, effective use of layout techniques like Flexbox and Grid, and strong visual hierarchy. 
-      It includes sections for product features, testimonials, and a compelling call-to-action—highlighting my attention to UX/UI principles.</p>
-  <aside> <img src="" alt="Product Launch Page Screenshot"> </aside>
-    </article>
+      <article class="project">
+        <div class="project-content">
+          <h3>Calculator App</h3>
+          <p>This is a fully functional calculator that handles basic arithmetic operations with a smooth, user-friendly
+            interface.
+            Built using JavaScript, the app features real-time input handling, keyboard support, and an intuitive
+            design.
+            It's a great example of applying logic and interactivity in the browser.</p>
+        </div>
+        <aside class="project-visual">
+          <img src="" alt="Screenshot of calculator application showing clean interface with number pad">
+        </aside>
+      </article>
 
-  <article>
-    <h2>Calculator App</h2>
-    <p>This is a fully functional calculator that handles basic arithmetic operations with a smooth, user-friendly interface.
-      Built using JavaScript, the app features real-time input handling, keyboard support, and an intuitive design.
-      It’s a great example of applying logic and interactivity in the browser.</p>
-  <aside> <img src="" alt="Calculator App Screenshot"> </aside>
-    </article>
+      <article class="project">
+        <div class="project-content">
+          <h3>Quiz Game</h3>
+          <p>An interactive quiz game that presents users with multiple-choice questions and provides real-time feedback
+            and scoring.
+            Developed using HTML, CSS, and JavaScript, this project demonstrates dynamic content rendering, DOM
+            manipulation, and basic game logic—making learning both fun and educational.</p>
+        </div>
+        <aside class="project-visual">
+          <img src="" alt="Screenshot of quiz game interface showing question and multiple choice answers">
+        </aside>
+      </article>
 
-  <article>
-    <h2>Quiz Game</h2>
-    <p>An interactive quiz game that presents users with multiple-choice questions and provides real-time feedback and scoring.
-      Developed using HTML, CSS, and JavaScript, this project demonstrates dynamic content rendering, DOM manipulation, and basic game logic—making learning both fun and educational.</p>
-  <aside> <img src="" alt="Quiz Game Screenshot"> </aside>
-    </article>
-
-  <article>
-    <h2>JavaFX-Based STIMS</h2>
-    <p>A comprehensive desktop application developed using JavaFX, STIMS (Student Transcript and Information Management System) is designed to manage student records, academic transcripts, and related data. 
-      With a robust backend powered by MySQL,this project showcases my skills in Java, database integration, and building real-world applications with graphical user interfaces.</p>
-    
-      <aside> <img src="" alt="JavaFX-Based STIMS Screenshot"> </aside>
-  </article>
-
-
-
-
-
-</section>
-
-
-
-
-
-
-
+      <article class="project">
+        <div class="project-content">
+          <h3>JavaFX-Based STIMS</h3>
+          <p>A comprehensive desktop application developed using JavaFX, STIMS (Student Transcript and Information
+            Management System) is designed to manage student records, academic transcripts, and related data.
+            With a robust backend powered by MySQL, this project showcases my skills in Java, database integration, and
+            building real-world applications with graphical user interfaces.</p>
+        </div>
+        <aside class="project-visual">
+          <img src="" alt="Screenshot of STIMS application showing student data management interface">
+        </aside>
+      </article>
+    </section>
   </main>
 
- <footer class="site-footer">
-    <p>&copy; All rights reserved <span id="current-year">2025</span></p>
+  <footer class="site-footer">
+    <p>&copy; <time datetime="2025">2025</time> All rights reserved.</p>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- HTML Meta Tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Portfolio website of Dagmawi Gezahegn, showcasing projects, articles and contact information for a Frontend Developer.">
-  <meta name="keywords"
-    content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development">
+    content="Articles by Dagmawi Gezahegn about frontend development, learning experiences, and career tips.">
+  <meta name="keywords" content="Dagmawi Gezahegn, frontend development, web development articles, programming blog">
   <meta name="author" content="Dagmawi Gezahegn">
 
-
-  <title>Dagmawi Gezahegn | Frontend Developer Portfolio</title>
+  <title>Articles | Dagmawi Gezahegn - Frontend Developer</title>
 
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio">
+  <meta property="og:title" content="Articles | Dagmawi Gezahegn - Frontend Developer">
   <meta property="og:description"
-    content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
+    content="Read articles about frontend development, learning experiences, and career tips by Dagmawi Gezahegn.">
   <meta property="og:image" content="assets/images/og-image.jpg">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio">
+  <meta name="twitter:title" content="Articles | Dagmawi Gezahegn - Frontend Developer">
   <meta name="twitter:description"
-    content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
+    content="Read articles about frontend development, learning experiences, and career tips by Dagmawi Gezahegn.">
   <meta name="twitter:image" content="assets/images/og-image.jpg">
 
   <!-- Favicon and Manifest -->
@@ -33,9 +31,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="assets/favicon/site.">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -44,9 +40,9 @@
       <a href="index.html" class="logo-link">
         <img src="assets/images/logo.svg" alt="Logo">Dagmawi G.
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="articles.html">Articles</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -54,93 +50,92 @@
       </nav>
     </div>
   </header>
-
-<main>
-  <section class="hero-section">
-  <h1 class="hero-title">Articles & Insights</h1>
-  <p>I write about frontend development, learning experiences, and career tips.</p>
-   </section>
-    <hr class="section-divider">
+  <hr class="section-divider">
 
 
-<section>
-  <article>
-<h2>How I Built My Personal Portfolio Website</h2>
-<em>Published on April 10, 2025</em>
-  <p>Creating my personal portfolio was one of the most exciting steps in my journey as a frontend developer. 
-    I designed and built it using HTML, CSS, and JavaScript with a strong focus on responsiveness and accessibility. 
-    This article breaks down the planning, design, coding, and deployment stages, as well as the tools I used along the way.
-</p>
-<a href="#">Read more →</a>
-</article>
- <article>
-  <h2>From Zero to JavaScript: My Learning Journey </h2>
- <em>Published on March 22, 2025</em>
-  <p>When I first started learning JavaScript, it felt overwhelming—but taking small, consistent steps made a huge difference. In this article, I share the resources, projects, and techniques that helped me transition from beginner tutorials to building real applications like a calculator, quiz game, and interactive forms.</p>
-  <a href="#">Read more →</a>
-</article>
+  <main id="main-content">
+    <header class="hero-section">
+      <h1 class="hero-title">Articles & Insights</h1>
+      <p>I write about frontend development, learning experiences, and career tips.</p>
+    </header>
 
+    <section aria-labelledby="articles-heading">
+      <h2 id="articles-heading" class="visually-hidden">Article Collection</h2>
 
-<article>
-  <h2>Why Responsive Design Matters More Than Ever</h2>
-  <em>Published on February 15, 2025</em>
-  <p>In today’s multi-device world, responsive design isn’t optional—it’s essential. I explore the core principles of responsive design, show examples of how I applied them in my projects, and discuss why mobile-first thinking leads to better overall user experiences.</p>
-<a href="#">Read more →</a>
-</article>
+      <article class="article-post">
+        <header>
+          <h3>How I Built My Personal Portfolio Website</h3>
+          <p><time datetime="2025-04-10">Published on April 10, 2025</time></p>
+        </header>
+        <p>Creating my personal portfolio was one of the most exciting steps in my journey as a frontend developer.
+          I designed and built it using HTML, CSS, and JavaScript with a strong focus on responsiveness and
+          accessibility.
+          This article breaks down the planning, design, coding, and deployment stages, as well as the tools I used
+          along the way.
+        </p>
+        <a href="#" aria-label="Read more about building my portfolio">Read more →</a>
+      </article>
 
+      <article class="article-post">
+        <header>
+          <h3>From Zero to JavaScript: My Learning Journey</h3>
+          <p><time datetime="2025-03-22">Published on March 22, 2025</time></p>
+        </header>
+        <p>When I first started learning JavaScript, it felt overwhelming—but taking small, consistent steps made a huge
+          difference.
+          In this article, I share the resources, projects, and techniques that helped me transition from beginner
+          tutorials
+          to building real applications like a calculator, quiz game, and interactive forms.
+        </p>
+        <a href="#" aria-label="Read more about my JavaScript learning journey">Read more →</a>
+      </article>
 
- <article>
-  <h2>Building My First Desktop App with JavaFX</h2>
-  <em>Published on January 28, 2025</em>
-  <p>JavaFX opened a new world of possibilities for me beyond the browser. In this article, I walk through how I built STIMS (Student Transcript and Information Management System), the challenges I faced working with Java and MySQL, and how it strengthened my understanding of desktop GUI development.</p>
-<a href="#">Read more →</a> 
-</article>
+      <article class="article-post">
+        <header>
+          <h3>Why Responsive Design Matters More Than Ever</h3>
+          <p><time datetime="2025-02-15">Published on February 15, 2025</time></p>
+        </header>
+        <p>In today's multi-device world, responsive design isn't optional—it's essential. I explore the core principles
+          of responsive design, show examples of how I applied them in my projects, and discuss why mobile-first
+          thinking
+          leads to better overall user experiences.
+        </p>
+        <a href="#" aria-label="Read more about responsive design importance">Read more →</a>
+      </article>
 
- <article>
-  <h2>Tips for Writing Clean HTML and CSS</h2>
-  <em>Published on January 5, 2025</em>
-  <p>Writing clean, semantic HTML and modular CSS has drastically improved the quality and maintainability of my code. Here, I list my top tips for keeping your codebase organized, readable, and scalable—ideal for beginners who want to write like professionals.</p>
- <a href="#">Read more →</a>
-</article>
+      <article class="article-post">
+        <header>
+          <h3>Building My First Desktop App with JavaFX</h3>
+          <p><time datetime="2025-01-28">Published on January 28, 2025</time></p>
+        </header>
+        <p>JavaFX opened a new world of possibilities for me beyond the browser. In this article, I walk through how I
+          built
+          STIMS (Student Transcript and Information Management System), the challenges I faced working with Java and
+          MySQL,
+          and how it strengthened my understanding of desktop GUI development.
+        </p>
+        <a href="#" aria-label="Read more about building a JavaFX desktop app">Read more →</a>
+      </article>
 
-
-
-
-
-
-
-
-
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
+      <article class="article-post">
+        <header>
+          <h3>Tips for Writing Clean HTML and CSS</h3>
+          <p><time datetime="2025-01-05">Published on January 5, 2025</time></p>
+        </header>
+        <p>Writing clean, semantic HTML and modular CSS has drastically improved the quality and maintainability of my
+          code.
+          Here, I list my top tips for keeping your codebase organized, readable, and scalable—ideal for beginners who
+          want
+          to write like professionals.
+        </p>
+        <a href="#" aria-label="Read more about clean HTML and CSS tips">Read more →</a>
+      </article>
+    </section>
   </main>
 
- <footer class="site-footer">
-    <p>&copy; All rights reserved <span id="current-year">2025</span></p>
+  <footer class="site-footer">
+    <p>&copy; <time datetime="2025">2025</time> All rights reserved.</p>
   </footer>
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

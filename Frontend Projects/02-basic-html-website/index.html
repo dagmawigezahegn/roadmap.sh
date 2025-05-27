@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- HTML Meta Tags -->
@@ -11,8 +11,7 @@
     content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development">
   <meta name="author" content="Dagmawi Gezahegn">
 
-
-  <title>Dagmawi Gezahegn | Frontend Developer Portfolio</title>
+  <title>Frontend Developer Portfolio</title>
 
   <!-- Open Graph / Facebook Meta Tags -->
   <meta property="og:type" content="website">
@@ -33,20 +32,18 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="assets/favicon/site.">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-content">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="Logo">Dagmawi G.
+        <img src="assets/images/logo.svg" alt="Logo" width="50" height="50">Dagmawi G.
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Main navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="articles.html">Articles</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -54,16 +51,17 @@
       </nav>
     </div>
   </header>
-  
+  <hr class="section-divider">
 
-  <main class="main-content">
-    <section class="hero-section">
+  <main id="main-content" class="main-content">
+
+    <header class="hero-section">
       <h1 class="hero-title">Frontend Developer</h1>
-    </section>
+    </header>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul class="projects-list">
         <li>Portfolio</li>
         <li>Product Launch Page</li>
         <li>Calculator App</li>
@@ -72,105 +70,86 @@
       </ul>
     </section>
 
-    <section>
-      <h2>Work Experience</h2>
+    <section aria-labelledby="experience-heading">
 
-      <h3>Frontend Developer Intern</h3>
-      <p>XYZ Tech Solutions</p>
-      <p>June 2023 - Present</p>
-      <ul>
-        <li>Developed responsive web applications using HTML, CSS, and JavaScript.</li>
-        <li>Collaborated with designers to implement UI/UX designs.</li>
-        <li>Optimized web applications for maximum speed and scalability.</li>
-      </ul>
+      <h2 id="experience-heading">Work Experience</h2>
 
-      <h3>Freelance Web Developer</h3>
-      <p>Self-employed</p>
-      <p>January 2022 - May 2023</p>
-      <ul>
-        <li>Built custom websites for small businesses and individuals.</li>
-        <li>Provided ongoing support and maintenance for client websites.</li>
-        <li>Implemented SEO best practices to improve website visibility.</li>
-      </ul>
+      <article class="job">
+        <header>
+          <h3>Freelance Web Developer</h3>
+          <p class="company">Self-employed</p>
+          <p class="duration">January 2022 - May 2023</p>
+        </header>
+        <ul class="job-description">
+          <li>Built custom websites for small businesses and individuals.</li>
+          <li>Provided ongoing support and maintenance for client websites.</li>
+          <li>Implemented SEO best practices to improve website visibility.</li>
+        </ul>
+      </article>
 
-      <h3>Open Source Contributions</h3>
-      <p>Contributed to 10+ open source repositories. Built and maintained my own GitHub projects.
-      </p>
-      <a href="https://github.com/dagmawigezahegn">Visit my GitHub Profile</a>
-
+      <article class="job">
+        <header>
+          <h3>Open Source Contributions</h3>
+        </header>
+        <p>Contributed to 10+ open source repositories. Built and maintained my own GitHub projects.</p>
+        <a href="https://github.com/dagmawigezahegn">Visit my GitHub Profile</a>
+      </article>
     </section>
 
-
-
-    <section>
-      <h2>Education</h2>
-      <p>Currently studying Software Engineering at BITS College.</p>
-      <p>Courses I’ve taken so far:</p>
-      <ul>
-        <li>Object Oriented Programming</li>
-        <li>Web Development</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Database Management Systems</li>
-        <li>Operating Systems</li>
-        <li>Computer Networks</li>
-        <li>Software Engineering Principles</li>
-      </ul>
-
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article class="education">
+        <p>Currently studying Software Engineering at BITS College.</p>
+        <p>Courses I've taken so far:</p>
+        <ul class="courses-list">
+          <li>Object Oriented Programming</li>
+          <li>Web Development</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Database Management Systems</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Software Engineering Principles</li>
+        </ul>
+      </article>
     </section>
 
+    <aside aria-labelledby="reviews-heading">
+      <h2 id="reviews-heading">Reviews from my Teachers</h2>
 
-    <aside>
-      <h2>Reviews from my Teachers</h2>
-      <figure>
+      <article class="review">
         <blockquote>
           <p>Dagmawi was always a curious learner and proactive during sessions. He often took the lead in group
             assignments.</p>
         </blockquote>
-        <figcaption>
+        <footer>
           <p>Amanuel T., Assistant Professor</p>
-        </figcaption>
+        </footer>
+      </article>
 
-      </figure>
-
-      <figure>
+      <article class="review">
         <blockquote>
           <p>His attention to detail and persistence in problem-solving make him stand out among his peers.</p>
         </blockquote>
-        <figcaption>
+        <footer>
           <p>Tadesse B., Software Engineering Dept.</p>
-        </figcaption>
-      </figure>
-      <figure>
+        </footer>
+      </article>
+
+      <article class="review">
         <blockquote>
           <p>Dagmawi consistently submitted high-quality work and asked meaningful questions that enriched classroom
             discussions.</p>
         </blockquote>
-        <figcaption>
+        <footer>
           <p>Selamawit G., Senior Lecturer</p>
-        </figcaption>
-      </figure>
+        </footer>
+      </article>
     </aside>
-
-
-
-
   </main>
 
- <footer class="site-footer">
-    <p>&copy; All rights reserved <span id="current-year">2025</span></p>
+  <footer class="site-footer">
+    <p>&copy; <time datetime="2025">2025</time> All rights reserved.</p>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
