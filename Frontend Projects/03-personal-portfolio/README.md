@@ -1,18 +1,19 @@
-# 📝 Basic HTML website
+# Personal Portfolio
 
-A modern, responsive portfolio website built with semantic HTML5. Designed to showcase professional work while prioritizing accessibility and performance.
+A modern, responsive portfolio website built with semantic HTML5 and styled with CSS maintaining a responsive design across different devices.Designed to showcase professional work while prioritizing accessibility and performance.
 ---
 
 ## ✨ Features
 
 - **Semantic HTML5** for accessibility and SEO
+- **CSS Styles** for responsive design
 - **SEO meta tags** for better search visibility
 - **Open Graph tags** for rich social sharing
 - **Favicon support** for a polished look
 
 ## 📁 Folder Structure
 ```
-02-basic-html-website/
+03-personal-portfolio/
 ├── assets/
 │   ├── favicon/
 │   │   ├── favicon.ico
@@ -29,13 +30,14 @@ A modern, responsive portfolio website built with semantic HTML5. Designed to sh
 ├── contact.html
 ├── projects.html
 ├── README.md
+├── styles.css
 ```
 ---
 
 
 ## 💡 Inspiration
 
-Inspired by the [Basic HTML Website project on roadmap.sh](https://roadmap.sh/projects/basic-html-website).
+Inspired by the [Personal Portfolio project on roadmap.sh](https://roadmap.sh/projects/portfolio-website).
 
 ---
 

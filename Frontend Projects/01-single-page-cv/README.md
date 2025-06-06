@@ -13,9 +13,9 @@ A modern, single-page resume/CV built with semantic HTML and CSS. Clean, respons
 - **Favicon support** for a polished look
 - **Professional, print-friendly layout**
 
-
+## 📁 Folder Structure
 ```
-single-page-cv/
+01-single-page-cv/
 ├── assets/
 │   ├── favicon/
 │   │   ├── favicon.ico
