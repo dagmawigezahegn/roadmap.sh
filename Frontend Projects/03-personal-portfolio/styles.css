@@ -1,0 +1,119 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ====== Typography ====== */
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Nova Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.site-footer {
+  font-family: "Nova Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* ====== Header ====== */
+.site-header {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  gap: 0.5rem;
+}
+
+.logo-link img {
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list li:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin-left: 0.75rem;
+  margin-right: -0.75rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+
+/* ====== Media Query ====== */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+  
+  .logo-link {
+    flex-direction: column;
+  }
+  
+  .main-nav {
+    margin-top: 1rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
