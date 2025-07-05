@@ -56,7 +56,7 @@ h3 {
 }
 
 .logo-link img {
-  border-radius: 5px;
+  border-radius: 12px;
   width: 50px;
   height: 50px;
 }
@@ -85,16 +85,37 @@ h3 {
   transition: color 0.3s ease;
 }
 
+
+
+
+
+
+
+/* ====== Main Content ====== */
 .main-content {
-  
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 2rem;
+  padding: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ====== Hero Section ====== */
 .hero-section {
   padding: 1.5rem 1rem;
   text-align: center;
-  margin:0;
-  
+  margin: 0;
 }
 
 .hero-title {
@@ -116,9 +137,41 @@ h3 {
 
 
 
+/* ====== Three Columns ====== */
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
 
 
+
+
+
+
+
+
+
+
+/* ====== Reviews Section ====== */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 1rem;
+}
+
+
+
+
+
+
+
+/* ====== Footer ====== */
+.site-footer {
+  text-align: center;
+}
 
 
 
@@ -140,9 +193,6 @@ h3 {
     margin-top: 1rem;
   }
   
-  
-  
-
   .hero-title {
     font-size: 2rem;
   }
@@ -151,7 +201,7 @@ h3 {
     font-size: 1rem;
     padding: 0 1rem;
   }
-
+  
   
   
   
