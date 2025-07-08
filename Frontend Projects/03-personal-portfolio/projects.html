@@ -1,162 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio website of Dagmawi Gezahegn, showcasing projects, articles and contact information for a Frontend Developer."
+    />
+    <meta
+      name="keywords"
+      content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development"
+    />
+    <meta name="author" content="Dagmawi Gezahegn" />
 
-<head>
-  <!-- HTML Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Portfolio website of Dagmawi Gezahegn, showcasing projects, articles and contact information for a Frontend Developer.">
-  <meta name="keywords"
-    content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development">
-  <meta name="author" content="Dagmawi Gezahegn">
+    <title>Dagmawi Gezahegn | Frontend Developer Portfolio</title>
+    <!-- Headings Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap"
+      rel="stylesheet"
+    />
 
-  <title>Dagmawi Gezahegn | Frontend Developer Portfolio</title>
-  <!-- Headings Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap" rel="stylesheet">
+    <!-- Body Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Body Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Dagmawi Gezahegn | Frontend Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn."
+    />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
 
-  <!-- Open Graph / Facebook Meta Tags -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio">
-  <meta property="og:description"
-    content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
-  <meta property="og:image" content="assets/images/og-image.jpg">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Dagmawi Gezahegn | Frontend Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn."
+    />
+    <meta name="twitter:image" content="assets/images/og-image.jpg" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio">
-  <meta name="twitter:description"
-    content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn.">
-  <meta name="twitter:image" content="assets/images/og-image.jpg">
+    <!-- Favicon and Manifest -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Favicon and Manifest -->
-  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
-  <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-  <header class="site-header">
-    <div class="header-content">
-      <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="Logo">Dagmawi G.
-      </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-
-  <main class="project-main">
-    <header class="hero-section">
-      <h1 class="hero-title">My Projects</h1>
-      <p>Here's a curated list of the work I've done from websites to apps.</p>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a href="index.html" class="logo-link">
+          <img src="assets/images/logo.svg" alt="Logo" />Dagmawi G.
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Featured Projects</h2>
-      <div class="projects-section">
+    <main class="project-main">
+      <header class="hero-section">
+        <h1 class="hero-title">My Projects</h1>
+        <p>
+          Here's a curated list of the work I've done from websites to apps.
+        </p>
+      </header>
 
-        <article id="portfolio" class="project">
-          <div class="project-content">
-            <h3>Personal Portfolio</h3>
-            <p>This is my personal web portfolio, crafted to represent who I am as a developer. It showcases my skills,
-              experience, and projects in a clean, responsive layout.
-              Designed using HTML, CSS, and JavaScript, the portfolio serves as both a résumé and a demonstration of my
-              frontend capabilities.</p>
-          </div>
-          <aside class="project-visual">
-            <img src="assets/images/portfolio-screenshoot.png"
-              alt="Screenshot of personal portfolio website showing clean layout and responsive design">
-          </aside>
-        </article>
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Featured Projects</h2>
+        <div class="projects-section">
+          <article id="portfolio" class="project">
+            <div class="project-content">
+              <h3>Personal Portfolio</h3>
+              <p>
+                This is my personal web portfolio, crafted to represent who I am
+                as a developer. It showcases my skills, experience, and projects
+                in a clean, responsive layout. Designed using HTML, CSS, and
+                JavaScript, the portfolio serves as both a résumé and a
+                demonstration of my frontend capabilities.
+              </p>
+            </div>
+            <aside class="project-visual">
+              <img
+                src="assets/images/portfolio-screenshoot.png"
+                alt="Screenshot of personal portfolio website showing clean layout and responsive design"
+              />
+            </aside>
+          </article>
 
-        <article id="product-page" class="project">
-          <div class="project-content">
-            <h3>Product Launch Page</h3>
-            <p>A sleek and modern landing page built to simulate the launch of a new product.
-              The page emphasizes responsive design, effective use of layout techniques like Flexbox and Grid, and
-              strong
-              visual hierarchy.
-              It includes sections for product features, testimonials, and a compelling call-to-action—highlighting my
-              attention to UX/UI principles.</p>
-          </div>
-          <aside class="project-visual">
-            <img src="assets/images/landing-page-screenshot.png" alt="Screenshot of product launch page showing modern design and layout">
-          </aside>
-        </article>
+          <article id="product-page" class="project">
+            <div class="project-content">
+              <h3>Product Launch Page</h3>
+              <p>
+                A sleek and modern landing page built to simulate the launch of
+                a new product. The page emphasizes responsive design, effective
+                use of layout techniques like Flexbox and Grid, and strong
+                visual hierarchy. It includes sections for product features,
+                testimonials, and a compelling call-to-action—highlighting my
+                attention to UX/UI principles.
+              </p>
+            </div>
+            <aside class="project-visual">
+              <img
+                src="assets/images/landing-page-screenshot.png"
+                alt="Screenshot of product launch page showing modern design and layout"
+              />
+            </aside>
+          </article>
 
-        <article id="calculator-app" class="project">
-          <div class="project-content">
-            <h3>Calculator App</h3>
-            <p>This is a fully functional calculator that handles basic arithmetic operations with a smooth,
-              user-friendly
-              interface.
-              Built using JavaScript, the app features real-time input handling, keyboard support, and an intuitive
-              design.
-              It's a great example of applying logic and interactivity in the browser.</p>
-          </div>
-          <aside class="project-visual">
-            <img src="assets/images/calculator-screenshoot.png"
-              alt="Screenshot of calculator application showing clean interface with number pad">
-          </aside>
-        </article>
+          <article id="calculator-app" class="project">
+            <div class="project-content">
+              <h3>Calculator App</h3>
+              <p>
+                This is a fully functional calculator that handles basic
+                arithmetic operations with a smooth, user-friendly interface.
+                Built using JavaScript, the app features real-time input
+                handling, keyboard support, and an intuitive design. It's a
+                great example of applying logic and interactivity in the
+                browser.
+              </p>
+            </div>
+            <aside class="project-visual">
+              <img
+                src="assets/images/calculator-screenshoot.png"
+                alt="Screenshot of calculator application showing clean interface with number pad"
+              />
+            </aside>
+          </article>
 
-        <article id="quiz-game" class="project">
-          <div class="project-content">
-            <h3>Quiz Game</h3>
-            <p>An interactive quiz game that presents users with multiple-choice questions and provides real-time
-              feedback
-              and scoring.
-              Developed using HTML, CSS, and JavaScript, this project demonstrates dynamic content rendering, DOM
-              manipulation, and basic game logic—making learning both fun and educational.</p>
-          </div>
-          <aside class="project-visual">
-            <img src="assets/images/quiz-screenshhot.png"
-              alt="Screenshot of quiz game interface showing question and multiple choice answers">
-          </aside>
-        </article>
+          <article id="quiz-game" class="project">
+            <div class="project-content">
+              <h3>Quiz Game</h3>
+              <p>
+                An interactive quiz game that presents users with
+                multiple-choice questions and provides real-time feedback and
+                scoring. Developed using HTML, CSS, and JavaScript, this project
+                demonstrates dynamic content rendering, DOM manipulation, and
+                basic game logic—making learning both fun and educational.
+              </p>
+            </div>
+            <aside class="project-visual">
+              <img
+                src="assets/images/quiz-screenshhot.png"
+                alt="Screenshot of quiz game interface showing question and multiple choice answers"
+              />
+            </aside>
+          </article>
 
-        <article id="stims" class="project">
-          <div class="project-content">
-            <h3>JavaFX-Based STIMS</h3>
-            <p>A comprehensive desktop application developed using JavaFX, STIMS (Student Transcript and Information
-              Management System) is designed to manage student records, academic transcripts, and related data.
-              With a robust backend powered by MySQL, this project showcases my skills in Java, database integration,
-              and
-              building real-world applications with graphical user interfaces.</p>
-          </div>
-          <aside class="project-visual">
-            <img src="assets/images/STIMS-screenshot.png"
-              alt="Screenshot of STIMS application showing student data management interface">
-          </aside>
-        </article>
-      </div>
-    </section>
-  </main>
+          <article id="stims" class="project">
+            <div class="project-content">
+              <h3>JavaFX-Based STIMS</h3>
+              <p>
+                A comprehensive desktop application developed using JavaFX,
+                STIMS (Student Transcript and Information Management System) is
+                designed to manage student records, academic transcripts, and
+                related data. With a robust backend powered by MySQL, this
+                project showcases my skills in Java, database integration, and
+                building real-world applications with graphical user interfaces.
+              </p>
+            </div>
+            <aside class="project-visual">
+              <img
+                src="assets/images/STIMS-screenshot.png"
+                alt="Screenshot of STIMS application showing student data management interface"
+              />
+            </aside>
+          </article>
+        </div>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <p>&copy; <time datetime="2025">2025</time> All rights reserved.</p>
-  </footer>
-</body>
-
+    <footer class="site-footer">
+      <p>&copy; <time datetime="2025">2025</time> All rights reserved.</p>
+    </footer>
+  </body>
 </html>
