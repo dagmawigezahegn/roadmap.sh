@@ -415,6 +415,67 @@ ol {
   Articles page
   ========================================
 */
+.articles-main {
+  width: var(--content-width);
+  margin: var(--space-xl) auto;
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.articles-sections {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+#articles-heading {
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.article-post {
+  padding: var(--space-md);
+  border-radius: var(--border-radius);
+  background: var(--color-light);
+  border: var(--border-width) solid var(--color-border);
+  display: grid;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.article-post h3 {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.article-post time {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.article-post p {
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--color-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.article-post a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  justify-self: start;
+  transition: color 0.2s ease;
+}
+
+.article-post a:hover,
+.article-post a:focus {
+  color: var(--color-dark);
+  text-decoration: underline;
+}
 
 
 
