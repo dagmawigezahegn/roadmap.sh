@@ -8,7 +8,7 @@
   --color-dark: #111;
   --color-muted: #666;
   --color-border: rgba(0, 0, 0, 0.1);
-
+  
   /* Typography */
   --font-base: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: 'Nova Script', system-ui, sans-serif;
@@ -17,18 +17,18 @@
   --font-size-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
   --font-size-xl: clamp(1.5rem, 1.25rem + 1.25vw, 2.5rem);
   --line-height: 1.6;
-
+  
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
-
+  
   /* Borders */
   --border-radius: 0.5rem;
   --border-width: 1px;
-
+  
   /* Layout */
   --max-width: 1200px;
   --content-width: min(90%, var(--max-width));
@@ -255,8 +255,8 @@ ol {
 }
 
 .projects-list a {
-  text-decoration:none;
-  color:inherit;
+  text-decoration: none;
+  color: inherit;
   padding: var(--space-xs) 0;
 }
 
@@ -355,7 +355,7 @@ ol {
 .project {
   --project-min-height: 400px;
   --image-aspect-ratio: 16/9;
-
+  
   display: grid;
   gap: var(--space-lg);
   grid-template-columns: 1fr 1fr;
@@ -495,50 +495,130 @@ ol {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
   ========================================
   Contact page
   ========================================
 */
+.contact-main {
+  width: var(--content-width);
+  margin: var(--space-xl) auto;
+  display: grid;
+  gap: var(--space-xl);
+}
 
+.contact-section {
+  display: grid;
+  gap: var(--space-lg);
+}
 
+#contact-heading {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  text-align: center;
+  position: relative;
+  margin-bottom: var(--space-xs);
+}
 
+#contact-heading::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 3px;
+  background: var(--color-accent);
+  margin: var(--space-sm) auto 0;
+}
 
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
 
+.contact-form {
+  display: grid;
+  gap: var(--space-md);
+  background: var(--color-light);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-border);
+}
 
+.form-group {
+  display: grid;
+  gap: var(--space-xs);
+}
 
+.form-group label {
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+}
 
+.required::after {
+  content: '*';
+  color: var(--color-accent);
+  margin-left: 0.25rem;
+}
 
+.contact-form input,
+.contact-form textarea {
+  padding: var(--space-sm);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  transition: border-color 0.2s ease;
+}
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
 
+.submit-btn {
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--border-radius);
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  justify-self: start;
+}
 
+.submit-btn:hover,
+.submit-btn:focus {
+  background: var(--color-primary);
+}
 
+/* Success/error messages */
+.form-message {
+  padding: var(--space-sm);
+  border-radius: var(--border-radius);
+  margin-top: var(--space-md);
+  display: none;
+}
 
+.form-message.success {
+  background: rgba(0, 128, 0, 0.1);
+  color: green;
+  border: 1px solid green;
+  display: block;
+}
 
-
-
-
-
-
-
+.form-message.error {
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+  border: 1px solid red;
+  display: block;
+}
 
 
 
@@ -564,106 +644,106 @@ ol {
   ========================================
 */
 @media (max-width: 768px) {
-
+  
   /* ====== Home Page ====== */
   .header-content {
     flex-direction: column;
     gap: var(--space-sm);
   }
-
+  
   .nav-list {
     flex-wrap: wrap;
     justify-content: center;
   }
-
+  
   .hero-section {
     padding: var(--space-lg) 0;
   }
-
+  
   /* ====== Projects Page ====== */
   .project-main {
     margin: var(--space-lg) auto;
     gap: var(--space-lg);
   }
-
+  
   #projects-heading {
     margin-bottom: var(--space-lg);
   }
-
+  
   .projects-section {
     gap: var(--space-lg);
   }
-
+  
   .project {
     grid-template-columns: 1fr;
     grid-template-areas: "image" "text";
     --project-min-height: auto;
     gap: var(--space-md);
   }
-
+  
   .project:nth-child(even) {
     grid-template-areas: "image" "text";
   }
-
+  
   .project-content {
     padding: var(--space-sm);
   }
 }
 
 @media (max-width: 480px) {
-
+  
   /* ====== Home Page ====== */
   .logo-link {
     flex-direction: column;
     text-align: center;
   }
-
+  
   .nav-list {
     flex-direction: column;
     gap: var(--space-xs);
   }
-
+  
   .nav-list li:not(:last-child)::after {
     content: none;
   }
-
+  
   .main-content {
     width: 95%;
     margin: var(--space-md) auto;
     gap: var(--space-lg);
   }
-
+  
   .hero-title {
     font-size: clamp(1.75rem, 1.5rem + 1.25vw, 2rem);
   }
-
+  
   /* ====== Projects Page ====== */
   .project-main {
     margin: var(--space-md) auto;
     gap: var(--space-md);
     width: 95%;
   }
-
+  
   #projects-heading {
     margin-bottom: var(--space-md);
   }
-
+  
   .projects-section {
     gap: var(--space-md);
   }
-
+  
   .project {
     padding: var(--space-sm);
   }
-
+  
   .project-content h3 {
     font-size: var(--font-size-base);
   }
-
+  
   .project-visual {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   }
-
+  
 }
 
 
@@ -695,7 +775,7 @@ ol {
   html {
     scroll-behavior: auto;
   }
-
+  
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -712,17 +792,17 @@ ol {
     color: black;
     background: white;
   }
-
+  
   .site-header,
   .site-footer {
     background: white !important;
     color: black !important;
   }
-
+  
   .nav-list {
     display: none;
   }
-
+  
   a::after {
     content: " (" attr(href) ")";
     font-size: 0.8em;
