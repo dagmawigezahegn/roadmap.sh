@@ -1,4 +1,4 @@
-# Personal Portfolio
+# 📝 Dagmawi Gezahegn — Personal Portfolio
 
 A modern, responsive portfolio website built with semantic HTML5 and styled with CSS maintaining a responsive design across different devices.Designed to showcase professional work while prioritizing accessibility and performance.
 ---

@@ -122,37 +122,37 @@ body {
     padding: 2rem 1.5rem;
     margin: 1rem;
   }
-  
+
   .changelog-header h1 {
     font-size: 1.8rem;
   }
-  
+
   .changelog-header p {
     font-size: 0.95rem;
     margin-bottom: 2rem;
   }
-  
+
   .timeline::before {
     left: 90px;
   }
-  
+
   .timeline-item .date {
     width: 90px;
     font-size: 0.85rem;
     padding-right: 1rem;
   }
-  
+
   .timeline-item .dot {
     left: 90px;
   }
-  
+
   .timeline-item .content {
     width: calc(100% - 90px);
     font-size: 0.9rem;
     padding-left: 1rem;
     white-space: normal;
   }
-  
+
   .changelog-button {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
