@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.changelog-container {
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.changelog-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.changelog-header p {
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-1px);
+  width: 2px;
+  background-color: #000000;
+}
+
+.timeline-list {
+  list-style: none;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  padding-bottom: 1.5rem;
+  text-align: left;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item .date {
+  color: #888888;
+  font-size: 0.9rem;
+  width: 50%;
+  text-align: center;
+  padding-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.timeline-item .dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-5px);
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #111;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item .content {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  width: 50%;
+  padding-left: 2rem;
+}
+
+.changelog-footer {
+  margin-top: 2rem;
+}
+
+.changelog-button {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.changelog-button:hover {
+  background-color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .changelog-container {
+    width: 95%;
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .changelog-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .changelog-header p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline::before {
+    left: 90px;
+  }
+  
+  .timeline-item .date {
+    width: 90px;
+    font-size: 0.85rem;
+    padding-right: 1rem;
+  }
+  
+  .timeline-item .dot {
+    left: 90px;
+  }
+  
+  .timeline-item .content {
+    width: calc(100% - 90px);
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    white-space: normal;
+  }
+  
+  .changelog-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
