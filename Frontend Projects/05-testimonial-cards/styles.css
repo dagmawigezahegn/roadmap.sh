@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Testimonial Card-1 Style */
+.testimonial-card-1 {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content-1 {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #1a1a1a;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #1a1a1a;
+}
+
+.testimonial-author-1 {
+  display: flex;
+  align-items: center;
+}
+
+.author-image-1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #ddd;
+}
+
+.author-info-1 h4 {
+  margin: 5px 0 0;
+}
+
+.author-info-1 p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+/* Testimonial Card-2 Style */
+.testimonial-card-2 {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #1a1a1a;
+}
+
+.testimonial-content-2 {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial-author-2 {
+  display: flex;
+  align-items: center;
+}
+
+.author-image-2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #ddd;
+}
+
+.author-info-2 h4 {
+  margin: 5px 0 0;
+}
+
+.author-info-2 p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+/* Testimonial Card-3 Style */
+.testimonial-card-3 {
+  display: flex;
+  align-items: stretch;
+  max-width: 800px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  gap: 5px;
+}
+
+.author-image-3 {
+  flex: 0 0 220px;
+}
+
+.author-image-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+
+.testimonial-3 {
+  flex: 1;
+  background: #1a1a1a;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.author-info-3 h4 {
+  margin: 0;
+}
+
+.author-info-3 p {
+  margin: 5px 0 20px;
+  color: #aaa;
+}
+
+.testimonial-content-3 p {
+  margin: 0;
+}
+
+/* Testimonial Card-4 Style */
+.testimonial-card-4 {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #1a1a1a;
+}
+
+.testimonial-content-4 {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.testimonial-author-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.author-image-4 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #ddd;
+}
+
+.author-info-4 h4 {
+  margin: 0;
+}
+
+/* --------------------------------------- */
+/* RESPONSIVE STYLES FOR ALL TESTIMONIALS */
+/* --------------------------------------- */
+@media (max-width: 768px) {
+  /* Grid gap smaller on small screens */
+  .testimonials-grid {
+    gap: 15px;
+  }
+
+  .testimonial-author-1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-image-1 img {
+    margin: 0 0 10px;
+  }
+
+  .speech-bubble {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .speech-bubble:after {
+    display: none;
+  }
+
+  /* Card 2 responsive adjustments */
+  .testimonial-author-2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-image-2 img {
+    margin: 0 0 10px;
+  }
+
+  /* Card 3 responsive adjustments (already had this) */
+  .testimonial-card-3 {
+    flex-direction: column;
+  }
+
+  .author-image-3 {
+    flex: 0 0 auto;
+  }
+
+  .author-image-3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Card 4 responsive adjustments */
+  .testimonial-author-4 {
+    gap: 10px;
+  }
+
+  .author-image-4 img {
+    margin: 0;
+  }
+}

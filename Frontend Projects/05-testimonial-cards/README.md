@@ -1,21 +1,24 @@
 # 📝 Dagmawi Gezahegn — Testimonial Cards
 
-A responsive timeline component for displaying product updates and changelogs.
+A clean, responsive testimonial cards layout with multiple design variations for showcasing user reviews.
 
 ---
 
 ## ✨ Features
-- Clean vertical timeline with centered connection line
-- Perfectly aligned dots on all screen sizes
-- Responsive layout (desktop & mobile)
-- Single-line items with ellipsis overflow
-- No JavaScript needed
 
+- Four unique testimonial card designs
+- Responsive grid layout adapting to all screen sizes
+- Speech bubble style with directional pointer
+- Image and text alignment for consistent visual balance
+- Dark/light theme card variations
+- Easy-to-customize CSS for further styling
 
+---
 
 ## 📁 Folder Structure
 ```
-04-changelog-component
+05-testimonial-cards
+└── images / 
 ├── index.html
 ├── README.md
 └── styles.css
@@ -25,7 +28,7 @@ A responsive timeline component for displaying product updates and changelogs.
 
 ## 💡 Inspiration
 
-Inspired by the [Changelog Component project on roadmap.sh](https://roadmap.sh/projects/changelog-component).
+Inspired by the [Testimonial Cards project on roadmap.sh](https://roadmap.sh/projects/testimonial-cards).
 
 ---
 
