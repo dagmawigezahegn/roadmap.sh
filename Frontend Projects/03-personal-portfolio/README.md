@@ -1,51 +1,17 @@
-# 📝 Dagmawi Gezahegn — Personal Portfolio
-
-A modern, responsive portfolio website built with semantic HTML5 and styled with CSS maintaining a responsive design across different devices.Designed to showcase professional work while prioritizing accessibility and performance.
----
+# Personal Portfolio
 
 ## ✨ Features
 
-- **Semantic HTML5** for accessibility and SEO
-- **CSS Styles** for responsive design
-- **SEO meta tags** for better search visibility
-- **Open Graph tags** for rich social sharing
-- **Favicon support** for a polished look
-
-## 📁 Folder Structure
-```
-03-personal-portfolio/
-├── assets/
-│   ├── favicon/
-│   │   ├── favicon.ico
-│   │   ├── favicon-96x96.png
-│   │   ├── favicon.svg
-│   │   ├── apple-touch-icon.png
-│   │   ├── web-app-manifest-192x192.png
-│   │   ├── web-app-manifest-512x512.png
-│   │   └── site.webmanifest
-│   └── images/
-│       
-├── index.html
-├── articles.html
-├── contact.html
-├── projects.html
-├── README.md
-├── styles.css
-```
----
+* **Modern, accessible, and semantic HTML structure**
+* **Fully responsive layout** across all devices using CSS Grid and media queries
+* **Thematic design system** with CSS variables for color, typography, spacing, and layout
+* **Interactive navigation** with hover effects and active state styling
+* **Modular sections** including Projects, Experience, Education, and Reviews
+* **Optimized for SEO and social media** with meta tags for Open Graph and Twitter cards
+* **Typography powered by Google Fonts**: Nova Script for headings, Inter for body text
+* **Dark-on-light theme** with clearly defined accent color for brand identity
+* **Print styles and reduced motion preferences** for accessibility and usability
+* **Scalable project/portfolio structure** for adding new pages (Articles, Contact, etc.)
 
 
-## 💡 Inspiration
-
-Inspired by the [Personal Portfolio project on roadmap.sh](https://roadmap.sh/projects/portfolio-website).
-
----
-
-
-## 👤 Author
-
-**Dagmawi Gezahegn**  
-[GitHub](https://github.com/dagmawigezahegn) • [LinkedIn](https://linkedin.com/in/dagmawi-g-engida)  
-📧 dagmawi.g.engida@gmail.com
-
----
+![Personal Portfolio](personal-portfolio.png)

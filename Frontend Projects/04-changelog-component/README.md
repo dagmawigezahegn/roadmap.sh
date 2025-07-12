@@ -1,39 +1,13 @@
-# 📝 Dagmawi Gezahegn — Changelog Component
-
-A responsive timeline component for displaying product updates and changelogs.
-
----
+# Changelog Component
 
 ## ✨ Features
-- Clean vertical timeline with centered connection line
-- Perfectly aligned dots on all screen sizes
-- Responsive layout (desktop & mobile)
-- Single-line items with ellipsis overflow
-- No JavaScript needed
+
+* **Semantic HTML5 structure** for meaningful markup and better accessibility
+* **CSS timeline layout** to visually represent updates chronologically
+* **Fully responsive design** with mobile-friendly adjustments using media queries
+* **Clean, centered UI layout** using Flexbox and max-width constraints
+* **Subtle UI polish** with shadows, spacing, and hover states
+* **Accessible button** for navigating to full changelog
 
 
-
-## 📁 Folder Structure
-```
-04-changelog-component
-├── index.html
-├── README.md
-└── styles.css
-```
----
-
-
-## 💡 Inspiration
-
-Inspired by the [Changelog Component project on roadmap.sh](https://roadmap.sh/projects/changelog-component).
-
----
-
-
-## 👤 Author
-
-**Dagmawi Gezahegn**  
-[GitHub](https://github.com/dagmawigezahegn) • [LinkedIn](https://linkedin.com/in/dagmawi-g-engida)  
-📧 dagmawi.g.engida@gmail.com
-
----
+![Changelog Component](changelog-component.png)
