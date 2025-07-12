@@ -10,7 +10,4 @@
 * **Font integration** using Google Fonts for enhanced visual identity
 
 
-![Datepicker UI](datepicker-ui.png)
-
-
-
+![Datepicker UI](datepicker-UI.png)
