@@ -43,3 +43,13 @@ Click the image below to view the project’s README and explore the demo:
   <a href='Frontend Projects/05-testimonial-cards/'>
     <img width="48%" src="./assets/images/testimonial-cards.png" alt="testimonial cards" />
   </a>
+
+  <p align="left">
+  <a href='Frontend Projects/05-testimonial-cards/'>
+    <img width="48%" src="./assets/images/testimonial-cards.png" alt="testimonial cards" />
+  </a>
+
+  <p align="left">
+  <a href='Frontend Projects/06-datepicker-UI/'>
+    <img width="48%" src="./assets/images/datepicker-ui.png" alt="datepicker ui" />
+  </a>
