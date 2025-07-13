@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Form UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form aria-label="Profile Update Form">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" aria-label="Full Name" placeholder="What should we call you?">
+        
+        <label for="email">Email</label>
+        <input id="email" type="email" aria-label="Email Address">
+        <p class="error-message" aria-live="polite">Email is already taken</p>
+        
+        <label for="enter-pass">Enter Password</label>
+        <div class="password-field">
+          <input id="enter-pass" type="password" aria-label="Enter Password">
+          <button type="button" aria-label="Show password" class="toggle-password">
+            ️
+          </button>
+        </div>
+        
+        <label for="confirm-pass">Confirm Password</label>
+        <div class="password-field">
+          <input id="confirm-pass" type="password" aria-label="Confirm Password">
+          <button type="button" aria-label="Show password" class="toggle-password">
+            ️
+          </button>
+        </div>
+        
+        <button type="submit" aria-label="Update Profile">Update Profile</button>
+      </form>
+    </div>
+    
+    <div class="profile-container" aria-label="Profile Completeness Section">
+      <div class="profile-completeness">
+        <div class="progress-circle" aria-label="Profile completeness: 65%">65%</div>
+        <p>Profile Completeness</p>
+        <ul>
+          <li><s>Create Account</s></li>
+          <li><s>Update Roadmap Progress</s></li>
+          <li><s>Setup Public Profile</s></li>
+          <li>Complete your first project</li>
+          <li>Invite your Friends</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
