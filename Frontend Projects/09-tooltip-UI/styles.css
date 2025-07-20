@@ -1,0 +1,337 @@
+/* ====== CSS Variables ====== */
+:root {
+  /* Colors */
+  --color-primary: #333;
+  --color-secondary: #555;
+  --color-accent: #0066cc;
+  --color-light: #f9f9f9;
+  --color-dark: #111;
+  --color-muted: #666;
+  --color-border: rgba(0, 0, 0, 0.1);
+  
+  /* Typography */
+  --font-base: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: "Nova Script", system-ui, sans-serif;
+  --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --font-size-sm: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  --font-size-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --font-size-xl: clamp(1.5rem, 1.25rem + 1.25vw, 2.5rem);
+  --line-height: 1.6;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  
+  /* Borders */
+  --border-radius: 0.5rem;
+  --border-width: 1px;
+  
+  /* Layout */
+  --max-width: 1200px;
+  --content-width: min(90%, var(--max-width));
+}
+
+/* ====== RESET ====== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== Base Styles ====== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+
+a {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ====== Layout Components ====== */
+.site-header {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--space-sm) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--content-width);
+  margin: 0 auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: white;
+  font-family: var(--font-heading);
+}
+
+.logo-link:hover,
+.logo-link:focus {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.logo-link img {
+  border-radius: var(--border-radius);
+  width: 50px;
+  height: 50px;
+}
+
+.main-content {
+  flex: 1;
+  width: var(--content-width);
+  margin: var(--space-lg) auto;
+  display: grid;
+  gap: var(--space-xl);
+}
+
+
+.site-footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--space-md) 0;
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+/* ====== Navigation ====== */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.nav-list a {
+  color: white;
+  padding: var(--space-xs) 0;
+  position: relative;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: none;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after,
+.nav-list a:focus::after {
+  width: 100%;
+}
+
+.nav-list li:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: -0.5rem;
+}
+
+.nav-list [aria-current="page"] {
+  font-weight: bold;
+}
+
+/* ====== Tooltip Styles ====== */
+.nav-item {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Pointer/arrow */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+  }
+}
+
+.nav-item a:hover .tooltip,
+.nav-item a:focus .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* ====== Hero Section ====== */
+.hero-section {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.5px;
+}
+
+
+/*
+  ========================================
+   Media Queries
+  ========================================
+*/
+@media (max-width: 768px) {
+  
+  /* ====== Home Page ====== */
+  .header-content {
+    gap: var(--space-sm);
+  }
+  
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tooltip {
+    bottom: 100%;
+    left: 0;
+    transform: translateX(0) scale(0.9);
+    
+    &::after {
+      left: 20px;
+      transform: translateX(0);
+      border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+      top: auto;
+      bottom: 100%;
+    }
+  }
+  
+  .nav-item a:hover .tooltip,
+  .nav-item a:focus .tooltip {
+    transform: translateX(0) scale(1);
+  }
+  
+  .hero-section {
+    padding: var(--space-lg) 0;
+  }
+  
+  @media (max-width: 480px) {
+    
+    /* ====== Home Page ====== */
+    .logo-link {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+    
+    .nav-list li:not(:last-child)::after {
+      content: none;
+    }
+    
+    .tooltip {
+      width: max-content;
+      max-width: 150px;
+      white-space: normal;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%) scale(0.9);
+      
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    
+    .nav-item a:hover .tooltip,
+    .nav-item a:focus .tooltip {
+      transform: translateX(-50%) scale(1);
+    }
+    
+    .main-content {
+      width: 95%;
+      margin: var(--space-md) auto;
+      gap: var(--space-lg);
+    }
+    
+    .hero-title {
+      font-size: clamp(1.75rem, 1.5rem + 1.25vw, 2rem);
+    }
+  }
+}

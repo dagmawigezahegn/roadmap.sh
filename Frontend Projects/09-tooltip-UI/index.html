@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- HTML Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio website of Dagmawi Gezahegn, showcasing projects, articles and contact information for a Frontend Developer." />
+  <meta name="keywords" content="Dagmawi Gezahegn, Frontend Developer, Portfolio, HTML, CSS, JavaScript, Web Development" />
+  <meta name="author" content="Dagmawi Gezahegn" />
+  
+  <title>Tooltip UI</title>
+  
+  <!-- Headings Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap" rel="stylesheet" />
+  
+  <!-- Body Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio" />
+  <meta property="og:description" content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn." />
+  <meta property="og:image" content="../03-personal-portfolio/assets/images/og-image.jpg" />
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dagmawi Gezahegn | Frontend Developer Portfolio" />
+  <meta name="twitter:description" content="Portfolio website showcasing projects, articles and contact information for Frontend Developer Dagmawi Gezahegn." />
+  <meta name="twitter:image" content="../03-personal-portfolio/assets/images/og-image.jpg" />
+  
+  <!-- Favicon and Manifest -->
+  <link rel="icon" type="image/png" href="../03-personal-portfolio/assets/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../03-personal-portfolio/assets/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="../03-personal-portfolio/assets/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../03-personal-portfolio/assets/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="../03-personal-portfolio/assets/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a href="index.html" class="logo-link">
+        <img src="../03-personal-portfolio/assets/images/logo.svg" alt="Logo" width="50" height="50" />Dagmawi G.
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" aria-current="page">
+              Home
+              <span class="tooltip">Go to homepage</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../03-personal-portfolio/projects.html">
+              Projects
+              <span class="tooltip">See my projects</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../03-personal-portfolio/articles.html">
+              Articles
+              <span class="tooltip">Read my blog</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../03-personal-portfolio/contact.html">
+              Contact
+              <span class="tooltip">Contact me</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <header class="hero-section">
+      <h1 class="hero-title">
+        Tooltip Navigation Demo</h1>
+      <p>
+        Hover over the navigation items above to see tooltips appear.
+        This interface uses only HTML and CSS — no JavaScript involved!
+      </p>
+    </header>
+    
+  </main>
+  
+  <footer class="site-footer">
+    &copy; 2025 Dagmawi Gezahegn. Tooltip UI Demo.
+  </footer>
+  
+</body>
+
+</html>
