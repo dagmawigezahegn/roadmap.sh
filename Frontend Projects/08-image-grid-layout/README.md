@@ -1,39 +1,13 @@
-# 📝 Dagmawi Gezahegn — Image Grid Layout
-
-A responsive timeline component for displaying product updates and changelogs.
-
----
+# Image Grid Layout
 
 ## ✨ Features
-- Clean vertical timeline with centered connection line
-- Perfectly aligned dots on all screen sizes
-- Responsive layout (desktop & mobile)
-- Single-line items with ellipsis overflow
-- No JavaScript needed
+
+* **Responsive image grid layout** using modern CSS Grid for flexible arrangements across screen sizes
+* **Semantic HTML structure** for better accessibility and maintainability
+* **Optimized image rendering** with `alt` text for screen readers and better SEO
+* **Consistent spacing and layout classes** for clean visual presentation
+* **Mobile-friendly design** with automatic wrapping and resizing of images
+* **Minimal HTML markup** focused solely on content structure, paired with external CSS for separation of concerns
 
 
-
-## 📁 Folder Structure
-```
-04-changelog-component
-├── index.html
-├── README.md
-└── styles.css
-```
----
-
-
-## 💡 Inspiration
-
-Inspired by the [Changelog Component project on roadmap.sh](https://roadmap.sh/projects/changelog-component).
-
----
-
-
-## 👤 Author
-
-**Dagmawi Gezahegn**  
-[GitHub](https://github.com/dagmawigezahegn) • [LinkedIn](https://linkedin.com/in/dagmawi-g-engida)  
-📧 dagmawi.g.engida@gmail.com
-
----
+![Image Grid Layout](image-grid-layout.png)

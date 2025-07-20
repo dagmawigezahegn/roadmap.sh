@@ -12,6 +12,9 @@ This repository contains front-end projects built by following the [roadmap.sh](
 - [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
 - [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
 - [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
+- [Image Grid Layout](https://roadmap.sh/projects/image-grid)
+- [Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
+
 
 
 
@@ -55,3 +58,17 @@ Click the image below to view the project’s README and explore the demo:
   <a href='Frontend Projects/07-accessible-form-UI/'>
     <img width="48%" src="./assets/images/accessible-form-ui.png" alt="accessible form UI" />
   </a>
+
+  <p align="left">
+  <a href='Frontend Projects/08-image-grid-layout/'>
+    <img width="48%" src="./assets/images/image-grid-layout.png" alt="images grid layout" />
+  </a>
+
+  <p align="left">
+  <a href='Frontend Projects/09-tooltip-UI/'>
+    <img width="48%" src="./assets/images/tooltip-ui.png" alt="tooltip ui" />
+  </a>
+
+
+  
+

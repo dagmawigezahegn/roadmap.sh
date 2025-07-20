@@ -1,39 +1,14 @@
-# 📝 Dagmawi Gezahegn — Tooltip UI
-
-A responsive timeline component for displaying product updates and changelogs.
-
----
+# Tooltip UI
 
 ## ✨ Features
-- Clean vertical timeline with centered connection line
-- Perfectly aligned dots on all screen sizes
-- Responsive layout (desktop & mobile)
-- Single-line items with ellipsis overflow
-- No JavaScript needed
+
+* **Fully responsive layout** with CSS Grid and Flexbox for adaptive design across desktop, tablet, and mobile devices
+* **Sticky header with logo and navigation** that stays accessible and readable while scrolling
+* **Interactive navigation menu** with dynamic hover underlines and keyboard focus support
+* **Custom tooltips** with smooth animations, arrow indicators, and screen-edge awareness for better usability
+* **Theming with CSS variables** for colors, spacing, typography, and layout control from a single source of truth
+* **Modern font pairing** using Google Fonts (`Inter` for body, `Nova Script` for headings) for a clean and stylish look
+* **Accessible semantics** with keyboard navigability and high contrast for better user experience
 
 
-
-## 📁 Folder Structure
-```
-04-changelog-component
-├── index.html
-├── README.md
-└── styles.css
-```
----
-
-
-## 💡 Inspiration
-
-Inspired by the [Changelog Component project on roadmap.sh](https://roadmap.sh/projects/changelog-component).
-
----
-
-
-## 👤 Author
-
-**Dagmawi Gezahegn**  
-[GitHub](https://github.com/dagmawigezahegn) • [LinkedIn](https://linkedin.com/in/dagmawi-g-engida)  
-📧 dagmawi.g.engida@gmail.com
-
----
+![Tooltip UI ](tooltip-UI.png)

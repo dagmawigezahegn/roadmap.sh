@@ -8,7 +8,7 @@
   --color-dark: #111;
   --color-muted: #666;
   --color-border: rgba(0, 0, 0, 0.1);
-  
+
   /* Typography */
   --font-base: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-heading: "Nova Script", system-ui, sans-serif;
@@ -17,18 +17,18 @@
   --font-size-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
   --font-size-xl: clamp(1.5rem, 1.25rem + 1.25vw, 2.5rem);
   --line-height: 1.6;
-  
+
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xl: 3rem;
-  
+
   /* Borders */
   --border-radius: 0.5rem;
   --border-width: 1px;
-  
+
   /* Layout */
   --max-width: 1200px;
   --content-width: min(90%, var(--max-width));
@@ -72,7 +72,6 @@ h4 {
 h1 {
   font-size: var(--font-size-xl);
 }
-
 
 a {
   color: var(--color-accent);
@@ -139,7 +138,6 @@ img {
   gap: var(--space-xl);
 }
 
-
 .site-footer {
   background-color: var(--color-primary);
   color: white;
@@ -201,7 +199,7 @@ img {
 
 .tooltip {
   position: absolute;
-  bottom: 125%;
+  bottom: 80%;
   left: 50%;
   transform: translateX(-50%) scale(0.9);
   background-color: rgba(0, 0, 0, 0.9);
@@ -215,22 +213,27 @@ img {
   transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
-  /* Pointer/arrow */
-  &::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
-  }
+  width: max-content;
+  max-width: 200px;
+  text-align: center;
+  line-height: 1.4;
+  font-family: var(--font-base);
+  font-weight: 500;
 }
 
-.nav-item a:hover .tooltip,
-.nav-item a:focus .tooltip {
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
+
+.nav-item:hover .tooltip,
+.nav-item:focus-within .tooltip {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
@@ -247,91 +250,78 @@ img {
   letter-spacing: -0.5px;
 }
 
-
-/*
-  ========================================
+/* ========================================
    Media Queries
-  ========================================
-*/
+======================================== */
 @media (max-width: 768px) {
-  
-  /* ====== Home Page ====== */
   .header-content {
     gap: var(--space-sm);
   }
-  
+
   .nav-list {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .tooltip {
-    bottom: 100%;
-    left: 0;
-    transform: translateX(0) scale(0.9);
-    
-    &::after {
-      left: 20px;
-      transform: translateX(0);
-      border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
-      top: auto;
-      bottom: 100%;
-    }
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
   }
-  
-  .nav-item a:hover .tooltip,
-  .nav-item a:focus .tooltip {
-    transform: translateX(0) scale(1);
+
+  .tooltip::after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
   }
-  
+
+  .nav-item:hover .tooltip,
+  .nav-item:focus-within .tooltip {
+    transform: translateX(-50%) scale(1);
+  }
+
   .hero-section {
     padding: var(--space-lg) 0;
   }
-  
-  @media (max-width: 480px) {
-    
-    /* ====== Home Page ====== */
-    .logo-link {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .nav-list {
-      flex-direction: column;
-      gap: var(--space-xs);
-    }
-    
-    .nav-list li:not(:last-child)::after {
-      content: none;
-    }
-    
-    .tooltip {
-      width: max-content;
-      max-width: 150px;
-      white-space: normal;
-      text-align: center;
-      left: 50%;
-      transform: translateX(-50%) scale(0.9);
-      
-      &::after {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-    }
-    
-    .nav-item a:hover .tooltip,
-    .nav-item a:focus .tooltip {
-      transform: translateX(-50%) scale(1);
-    }
-    
-    .main-content {
-      width: 95%;
-      margin: var(--space-md) auto;
-      gap: var(--space-lg);
-    }
-    
-    .hero-title {
-      font-size: clamp(1.75rem, 1.5rem + 1.25vw, 2rem);
-    }
+}
+
+@media (max-width: 480px) {
+  .logo-link {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .nav-list li:not(:last-child)::after {
+    content: none;
+  }
+
+  .tooltip {
+    bottom: 80%;
+    max-width: 150px;
+    white-space: normal;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+  }
+
+  .tooltip::after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .main-content {
+    width: 95%;
+    margin: var(--space-md) auto;
+    gap: var(--space-lg);
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 1.5rem + 1.25vw, 2rem);
   }
 }
